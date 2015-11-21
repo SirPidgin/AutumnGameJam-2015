@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿[2015.11.21-14.33.24:765][  0]Log file open, 11/21/15 16:33:24
 [2015.11.21-14.33.24:765][  0]LogInit:Display: Running engine for game: AutumnJam2015
 [2015.11.21-14.33.24:765][  0]LogInit:Display: RandInit(-652526615) SRandInit(-652526615).
@@ -635,3 +636,127 @@
 [2015.11.21-15.24.42:764][426]LogSavePackage: Total save time: 6092.813395ms
 [2015.11.21-15.24.42:765][426]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
 [2015.11.21-15.25.46:837][373]LogParticles: Destroying 0 GPU particle simulations 
+=======
+﻿[2015.11.21-14.07.03:024][  0]Log file open, 11/21/15 16:07:03
+[2015.11.21-14.07.03:024][  0]LogInit:Display: Running engine for game: AutumnJam2015
+[2015.11.21-14.07.03:024][  0]LogInit:Display: RandInit(1432702502) SRandInit(1432702502).
+[2015.11.21-14.07.03:024][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.11.21-14.07.03:024][  0]LogStats: Stats thread started at 0.085281
+[2015.11.21-14.07.03:024][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.21-14.07.03:024][  0]LogInit: API Version: 2672455
+[2015.11.21-14.07.03:024][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2015.11.21-14.07.03:024][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.11.21-14.07.03:024][  0]LogInit: Build Configuration: Development
+[2015.11.21-14.07.03:024][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.11.21-14.07.03:024][  0]LogInit: Command line: 
+[2015.11.21-14.07.03:024][  0]LogInit: Base directory: C:/Program Files/Unreal Engine/4.9/Engine/Binaries/Win64/
+[2015.11.21-14.07.03:024][  0]LogInit: Rocket: 1
+[2015.11.21-14.07.03:034][  0]LogInit: Using libcurl 7.41.0
+[2015.11.21-14.07.03:034][  0]LogInit:  - built for x86_64-pc-win32
+[2015.11.21-14.07.03:034][  0]LogInit:  - supports SSL with WinSSL
+[2015.11.21-14.07.03:034][  0]LogInit:  - other features:
+[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_SSL
+[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_IPV6
+[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_IDN
+[2015.11.21-14.07.03:034][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.11.21-14.07.03:034][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.11.21-14.07.03:034][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.11.21-14.07.03:034][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.11.21-14.07.03:034][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.11.21-14.07.03:042][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.11.21-14.07.03:050][  0]LogInit: Object subsystem initialized
+[2015.11.21-14.07.03:052][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.21-14.07.03:052][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.11.21-14.07.03:062][  0]LogInit: Computer: AOTA1-1L151-08
+[2015.11.21-14.07.03:062][  0]LogInit: User: EemeliSyy
+[2015.11.21-14.07.03:062][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.11.21-14.07.03:062][  0]LogInit: High frequency timer resolution =2.728076 MHz
+[2015.11.21-14.07.03:062][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2015.11.21-14.07.03:062][  0]LogMemory: Platform Memory Stats for Windows
+[2015.11.21-14.07.03:062][  0]LogMemory: Process Physical Memory: 54.52 MB used, 54.52 MB peak
+[2015.11.21-14.07.03:062][  0]LogMemory: Process Virtual Memory: 57.04 MB used, 57.04 MB peak
+[2015.11.21-14.07.03:062][  0]LogMemory: Physical Memory: 7052.08 MB used, 16291.31 MB total
+[2015.11.21-14.07.03:062][  0]LogMemory: Virtual Memory: 338.70 MB used, 8388608.00 MB total
+[2015.11.21-14.07.03:113][  0]LogTextLocalizationManager: No translations for ('fi-FI') exist, falling back to 'en' for localization and internationalization data.
+[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA Quadro K2200 (Feature Level 11_0)
+[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Adapter has 4035MB of dedicated video memory, 0MB of dedicated system memory, and 7889MB of shared system memory, 2 output[s]
+[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.11.21-14.07.04:115][  0]LogD3D11RHI: !Direct3DDevice
+[2015.11.21-14.07.04:115][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2015.11.21-14.07.04:125][  0]LogD3D11RHI: Async texture creation enabled
+[2015.11.21-14.07.04:140][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Intermediate/Shaders/WorkingDirectory/7760/).
+[2015.11.21-14.07.04:140][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Intermediate/Shaders/tmp/582DD6B74533448D9A4FAD93F6156C73/'.
+[2015.11.21-14.07.04:140][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.11.21-14.07.05:583][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.11.21-14.07.05:590][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.11.21-14.07.05:597][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.11.21-14.07.05:604][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.11.21-14.07.05:611][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.11.21-14.07.05:616][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.11.21-14.07.05:625][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.11.21-14.07.05:632][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.11.21-14.07.05:637][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.11.21-14.07.05:643][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.11.21-14.07.05:647][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.11.21-14.07.05:652][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.11.21-14.07.05:654][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.11.21-14.07.05:675][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.11.21-14.07.05:679][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.11.21-14.07.05:684][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.11.21-14.07.05:689][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.11.21-14.07.05:689][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.11.21-14.07.05:797][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.11.21-14.07.06:017][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.11.21-14.07.06:029][  0]LogDerivedDataCache: Using Local data cache path C:/Users/eemelisyy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.11.21-14.07.06:237][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.21-14.07.06:237][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.11.21-14.07.06:269][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.11.21-14.07.06:269][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.11.21-14.07.06:684][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.11.21-14.07.07:587][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.11.21-14.07.07:691][  0]LogAssetRegistry: FAssetRegistry took 0.0104 seconds to start up
+[2015.11.21-14.07.07:919][  0]SourceControl: Info Source control is disabled
+[2015.11.21-14.07.08:211][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.21-14.07.08:323][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.11.21-14.07.08:323][  0]LogUObjectAllocator: 6038864 out of 0 bytes used by permanent object pool.
+[2015.11.21-14.07.08:398][  0]LogEngine: Initializing Engine...
+[2015.11.21-14.07.08:404][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.11.21-14.07.08:405][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2015.11.21-14.07.08:559][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.11.21-14.07.08:563][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2015.11.21-14.07.08:594][  0]LogInit: FAudioDevice initialized.
+[2015.11.21-14.07.08:625][  0]LogDerivedDataCache: Saved boot cache 0.03s 41MB C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.21-14.07.08:630][  0]LogInit: Texture streaming: Enabled
+[2015.11.21-14.07.08:638][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 1948406f4c988630dacebb868385c297|e7c5155694e34236a800dc8a3a5ed50d|c69064c8-796b-451a-aad8-b77b294f1212
+[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.11.21-14.07.08:664][  0]LogInit: Transaction tracking system initialized
+[2015.11.21-14.07.08:698][  0]BlueprintLog: New page: Editor Load
+[2015.11.21-14.07.08:793][  0]LocalizationService: Info Localization service is disabled
+[2015.11.21-14.07.08:884][  0]LogConsoleResponse:Display: 
+[2015.11.21-14.07.09:022][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.11.21-14.07.09:102][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/' took 0.02s
+[2015.11.21-14.07.09:102][  0]Cmd: MAP LOAD FILE="../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.21-14.07.09:102][  0]LightingResults: New page: Lighting Build
+[2015.11.21-14.07.09:109][  0]MapCheck: New page: Map Check
+[2015.11.21-14.07.09:109][  0]LightingResults: New page: Lighting Build
+[2015.11.21-14.07.09:119][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001FCBA160
+[2015.11.21-14.07.10:011][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.11.21-14.07.10:773][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.11.21-14.07.10:773][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.11.21-14.07.10:840][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 66.374ms to complete.
+[2015.11.21-14.07.10:840][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 1.738
+[2015.11.21-14.07.10:955][  0]LogCollectionManager: Loaded 0 collections in 0.002593 seconds
+[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Saved/Collections/' took 0.01s
+[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/Developers/EemeliSyy/Collections/' took 0.00s
+[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for 
+>>>>>>> f9e928e2a7ed0819ab93a71044b2c226bf997bf4
