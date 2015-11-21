@@ -1,762 +1,422 @@
-<<<<<<< HEAD
-﻿[2015.11.21-14.33.24:765][  0]Log file open, 11/21/15 16:33:24
-[2015.11.21-14.33.24:765][  0]LogInit:Display: Running engine for game: AutumnJam2015
-[2015.11.21-14.33.24:765][  0]LogInit:Display: RandInit(-652526615) SRandInit(-652526615).
-[2015.11.21-14.33.24:765][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2015.11.21-14.33.24:765][  0]LogStats: Stats thread started at 0.090864
-[2015.11.21-14.33.24:765][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
-[2015.11.21-14.33.24:765][  0]LogInit: API Version: 2672455
-[2015.11.21-14.33.24:765][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
-[2015.11.21-14.33.24:765][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
-[2015.11.21-14.33.24:765][  0]LogInit: Build Configuration: Development
-[2015.11.21-14.33.24:765][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
-[2015.11.21-14.33.24:765][  0]LogInit: Command line:  
-[2015.11.21-14.33.24:765][  0]LogInit: Base directory: C:/Program Files/Unreal Engine/4.9/Engine/Binaries/Win64/
-[2015.11.21-14.33.24:765][  0]LogInit: Rocket: 1
-[2015.11.21-14.33.24:776][  0]LogInit: Using libcurl 7.41.0
-[2015.11.21-14.33.24:776][  0]LogInit:  - built for x86_64-pc-win32
-[2015.11.21-14.33.24:776][  0]LogInit:  - supports SSL with WinSSL
-[2015.11.21-14.33.24:776][  0]LogInit:  - other features:
-[2015.11.21-14.33.24:776][  0]LogInit:      CURL_VERSION_SSL
-[2015.11.21-14.33.24:776][  0]LogInit:      CURL_VERSION_IPV6
-[2015.11.21-14.33.24:776][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2015.11.21-14.33.24:776][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2015.11.21-14.33.24:776][  0]LogInit:      CURL_VERSION_IDN
-[2015.11.21-14.33.24:776][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2015.11.21-14.33.24:776][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2015.11.21-14.33.24:776][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2015.11.21-14.33.24:776][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2015.11.21-14.33.24:776][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2015.11.21-14.33.24:787][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.11.21-14.33.24:794][  0]LogInit: Object subsystem initialized
-[2015.11.21-14.33.24:796][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.21-14.33.24:796][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.11.21-14.33.24:804][  0]LogInit: Computer: AOTA1-1L151-09D
-[2015.11.21-14.33.24:804][  0]LogInit: User: JaniVat
-[2015.11.21-14.33.24:804][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.11.21-14.33.24:804][  0]LogInit: High frequency timer resolution =2.728076 MHz
-[2015.11.21-14.33.24:804][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2015.11.21-14.33.24:804][  0]LogMemory: Platform Memory Stats for Windows
-[2015.11.21-14.33.24:804][  0]LogMemory: Process Physical Memory: 54.59 MB used, 54.59 MB peak
-[2015.11.21-14.33.24:804][  0]LogMemory: Process Virtual Memory: 57.03 MB used, 57.03 MB peak
-[2015.11.21-14.33.24:804][  0]LogMemory: Physical Memory: 4526.07 MB used, 16291.31 MB total
-[2015.11.21-14.33.24:804][  0]LogMemory: Virtual Memory: 339.08 MB used, 8388608.00 MB total
-[2015.11.21-14.33.24:970][  0]LogTextLocalizationManager: No translations for ('fi-FI') exist, falling back to 'en' for localization and internationalization data.
-[2015.11.21-14.33.25:962][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA Quadro K2200 (Feature Level 11_0)
-[2015.11.21-14.33.25:962][  0]LogD3D11RHI: Adapter has 4035MB of dedicated video memory, 0MB of dedicated system memory, and 7889MB of shared system memory, 2 output[s]
-[2015.11.21-14.33.25:962][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.11.21-14.33.25:967][  0]LogD3D11RHI: !Direct3DDevice
-[2015.11.21-14.33.25:967][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2015.11.21-14.33.25:976][  0]LogD3D11RHI: Async texture creation enabled
-[2015.11.21-14.33.25:991][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Intermediate/Shaders/WorkingDirectory/7776/).
-[2015.11.21-14.33.25:991][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Intermediate/Shaders/tmp/E3E5A7174FCDD4A55D1D89A85DA55EFE/'.
-[2015.11.21-14.33.25:991][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2015.11.21-14.33.28:304][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2015.11.21-14.33.28:310][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2015.11.21-14.33.28:316][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2015.11.21-14.33.28:321][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2015.11.21-14.33.28:327][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2015.11.21-14.33.28:331][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2015.11.21-14.33.28:335][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2015.11.21-14.33.28:339][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2015.11.21-14.33.28:343][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2015.11.21-14.33.28:347][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2015.11.21-14.33.28:351][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2015.11.21-14.33.28:355][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2015.11.21-14.33.28:356][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2015.11.21-14.33.28:376][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2015.11.21-14.33.28:380][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2015.11.21-14.33.28:383][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2015.11.21-14.33.28:387][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2015.11.21-14.33.28:387][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.11.21-14.33.28:494][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache: Loaded boot cache 0.33s 41MB C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2015.11.21-14.33.28:825][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2015.11.21-14.33.29:001][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.11.21-14.33.29:012][  0]LogDerivedDataCache: Using Local data cache path C:/Users/JaniVat/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.11.21-14.33.29:240][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.21-14.33.29:241][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.11.21-14.33.29:270][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.11.21-14.33.29:270][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.11.21-14.33.29:717][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.11.21-14.33.43:975][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.11.21-14.33.44:570][  0]LogAssetRegistry: FAssetRegistry took 0.0124 seconds to start up
-[2015.11.21-14.33.44:785][  0]SourceControl: Info Source control is disabled
-[2015.11.21-14.33.46:653][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.11.21-14.33.46:749][  0]LogObj: 28361 objects as part of root set at end of initial load.
-[2015.11.21-14.33.46:749][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
-[2015.11.21-14.33.46:827][  0]LogEngine: Initializing Engine...
-[2015.11.21-14.33.46:831][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
-[2015.11.21-14.33.46:832][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2015.11.21-14.33.47:010][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.11.21-14.33.47:016][  0]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-14.33.47:023][  0]LogInit: FAudioDevice initialized.
-[2015.11.21-14.33.47:047][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.21-14.33.47:052][  0]LogInit: Texture streaming: Enabled
-[2015.11.21-14.33.47:058][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.11.21-14.33.47:058][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
-[2015.11.21-14.33.47:058][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 3afa574c41b3923ec6dee9ba588df77b|b5858cd212d14ef682ade8fe55d52d71|8c56995a-db47-40ba-9f21-ee7864df72ac
-[2015.11.21-14.33.47:058][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2015.11.21-14.33.47:080][  0]LogInit: Transaction tracking system initialized
-[2015.11.21-14.33.47:113][  0]BlueprintLog: New page: Editor Load
-[2015.11.21-14.33.47:242][  0]LocalizationService: Info Localization service is disabled
-[2015.11.21-14.33.47:564][  0]LogConsoleResponse:Display: 
-[2015.11.21-14.33.48:102][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.11.21-14.33.48:728][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/' took 0.39s
-[2015.11.21-14.33.48:728][  0]Cmd: MAP LOAD FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.21-14.33.48:745][  0]LightingResults: New page: Lighting Build
-[2015.11.21-14.33.48:749][  0]MapCheck: New page: Map Check
-[2015.11.21-14.33.48:749][  0]LightingResults: New page: Lighting Build
-[2015.11.21-14.33.48:761][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000023A03CE0
-[2015.11.21-14.33.53:824][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-14.33.57:214][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.21-14.33.57:215][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.21-14.33.57:288][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 73.012ms to complete.
-[2015.11.21-14.33.57:288][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 8.561
-[2015.11.21-14.33.57:417][  0]LogCollectionManager: Loaded 0 collections in 0.003275 seconds
-[2015.11.21-14.33.57:448][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Collections/' took 0.01s
-[2015.11.21-14.33.57:448][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/Developers/JaniVat/Collections/' took 0.00s
-[2015.11.21-14.33.57:448][  0]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 1867 classes and 333 folders.
-[2015.11.21-14.33.57:464][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/Collections/' took 0.02s
-[2015.11.21-14.33.57:464][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
-[2015.11.21-14.33.57:472][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2015.11.21-14.33.58:315][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
-[2015.11.21-14.33.58:322][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2015.11.21-14.33.58:417][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2015.11.21-14.33.58:421][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2015.11.21-14.33.58:442][  0]LogLoad: Full Startup: 34.33 seconds (BP compile: 0.12 seconds)
-[2015.11.21-14.33.58:849][  0]SourceControl: Info On branch master
-[2015.11.21-14.33.58:849][  0]SourceControl: Info Your branch and 'origin/master' have diverged,
-[2015.11.21-14.33.58:849][  0]SourceControl: Info and have 2 and 2 different commits each, respectively.
-[2015.11.21-14.33.58:849][  0]SourceControl: Info   (use "git pull" to merge the remote branch into yours)
-[2015.11.21-14.33.58:849][  0]SourceControl: Info Changes not staged for commit:
-[2015.11.21-14.33.58:849][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
-[2015.11.21-14.33.58:849][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Engine.ini
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Game.ini
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	modified:   Saved/Logs/AutumnJam2015.log
-[2015.11.21-14.33.58:849][  0]SourceControl: Info Untracked files:
-[2015.11.21-14.33.58:849][  0]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	Content/Grass/
-[2015.11.21-14.33.58:849][  0]SourceControl: Info 	Content/HillTree_Tall_02/
-[2015.11.21-14.33.58:849][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
-[2015.11.21-14.33.58:849][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2015.11.21-14.33.58:991][  0]LogRenderer: Reallocating scene render targets to support 1228x628 (Frame:2).
-[2015.11.21-14.33.59:077][  1]Cmd: UpdateLandscapeEditorData -warnings
-[2015.11.21-14.34.00:331][  4]LogAssetRegistry: Asset discovery search completed in 15.7728 seconds
-[2015.11.21-14.34.00:331][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2015.11.21-14.34.00:331][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
-[2015.11.21-14.34.18:627][303]LogMaterial: Missing cached shader map for material M_AssetPlatform_Grass, compiling. 
-[2015.11.21-14.43.37:610][467]LogMaterial: 0.003991 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
-[2015.11.21-14.43.37:760][468]Cmd: UpdateLandscapeEditorData
-[2015.11.21-14.43.37:766][468]Cmd: UpdateLandscapeMIC
-[2015.11.21-14.44.31:354][512]LogSavePackage: Save=6202.832520ms
-[2015.11.21-14.44.31:354][512]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap_Auto18A568A3E461FD5DBD26926B0A3F54854.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto1.umap'
-[2015.11.21-14.44.31:366][512]LogSavePackage: Total save time: 6453.769613ms
-[2015.11.21-14.44.31:366][512]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto1.umap
-[2015.11.21-14.44.31:368][512]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 6.502
-[2015.11.21-14.44.31:368][512]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 6.502
-[2015.11.21-14.45.09:235][989]LogRenderer: Reallocating scene render targets to support 1432x924 (Frame:41251).
-[2015.11.21-14.45.56:065][581]Cmd: TRANSACTION UNDO
-[2015.11.21-14.45.56:079][581]LogEditorTransaction: Undo Foliage Editing
-[2015.11.21-14.54.32:180][321]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001BCB0860
-[2015.11.21-14.54.37:446][321]LogSavePackage: Save=5205.134277ms
-[2015.11.21-14.54.37:446][321]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap_Auto2809877974E8C2BB3B3CEB58CF54A9B06.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto2.umap'
-[2015.11.21-14.54.37:449][321]LogSavePackage: Total save time: 5261.383481ms
-[2015.11.21-14.54.37:449][321]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto2.umap
-[2015.11.21-14.54.37:450][321]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 5.287
-[2015.11.21-14.54.37:450][321]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 5.287
-[2015.11.21-14.55.24:452][253]Cmd: TRANSACTION UNDO
-[2015.11.21-14.55.24:452][253]LogEditorTransaction: Undo Foliage Editing
-[2015.11.21-14.55.39:736][168]Cmd: TRANSACTION UNDO
-[2015.11.21-14.55.39:736][168]LogEditorTransaction: Undo Foliage Editing
-[2015.11.21-14.55.47:724][653]Cmd: TRANSACTION UNDO
-[2015.11.21-14.55.47:724][653]LogEditorTransaction: Undo Foliage Editing
-[2015.11.21-14.58.13:493][222]LogSavePackage: Save=6081.039063ms
-[2015.11.21-14.58.13:493][222]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMapB60173414344E0B6A395F6A4113DBCF2.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
-[2015.11.21-14.58.14:525][222]LogSavePackage: Total save time: 7113.593243ms
-[2015.11.21-14.58.14:525][222]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
-[2015.11.21-14.58.24:805][710]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-14.58.24:805][710]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-14.58.24:806][710]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 6:58:24 PM)
-[2015.11.21-14.58.24:806][710]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-14.58.25:139][710]LogPlayLevel: PIE: StaticDuplicateObject took: (0.333490s)
-[2015.11.21-14.58.25:150][710]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-14.58.25:151][710]LogPlayLevel: PIE: World Init took: (0.011026s)
-[2015.11.21-14.58.25:151][710]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.344788s)
-[2015.11.21-14.58.25:170][710]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-14.58.25:176][710]LogInit: FAudioDevice initialized.
-[2015.11.21-14.58.26:345][710]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-14.58.26:547][710]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-16.58.26
-[2015.11.21-14.58.26:547][710]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-14.58.26:547][710]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-14.58.26:550][710]LogWorld: Bringing up level for play took: 0.197990
-[2015.11.21-14.58.28:163][710]LoadErrors: Info The Skeleton  VehicleSkeleton  is missing bones that SkeletalMesh  Vehicle_SkelMesh   needs. They will be added now. Please save the Skeleton!
-[2015.11.21-14.58.28:214][710]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 4.219
-[2015.11.21-14.58.28:214][710]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-14.59.55:501][473]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-14.59.55:572][473]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-14.59.55:601][473]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001E18D1C0
-[2015.11.21-15.00.18:968][398]LogSavePackage: Save=6399.004395ms
-[2015.11.21-15.00.18:968][398]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap952B80884044E69D0816D4A32B16D939.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
-[2015.11.21-15.00.18:976][398]LogSavePackage: Total save time: 6473.720305ms
-[2015.11.21-15.00.18:976][398]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
-[2015.11.21-15.03.14:182][ 40]LogActorComponent: UnregisterComponent: (/Engine/Transient.SphereBrushComponent) Not registered. Aborting.
-[2015.11.21-15.04.06:444][652]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.11.21-15.04.07:617][652]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0018 seconds. Added 107 classes and 0 folders.
-[2015.11.21-15.10.47:031][321]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComp) Not registered. Aborting.
-[2015.11.21-15.10.47:063][321]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000020914680
-[2015.11.21-15.10.53:105][321]LogSavePackage: Save=5979.141113ms
-[2015.11.21-15.10.53:105][321]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap_Auto31DB1464E4A2013AFF28B30ABC5CB4B72.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto3.umap'
-[2015.11.21-15.10.53:239][321]LogSavePackage: Total save time: 6161.409725ms
-[2015.11.21-15.10.53:239][321]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Autosaves/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap_Auto3.umap
-[2015.11.21-15.10.53:242][321]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap' took 6.211
-[2015.11.21-15.10.53:242][321]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 6.211
-[2015.11.21-15.11.23:137][925]Cmd: TRANSACTION UNDO
-[2015.11.21-15.11.23:137][925]LogEditorTransaction: Undo Edit Cast Static Shadows
-[2015.11.21-15.11.25:819][ 63]Cmd: TRANSACTION UNDO
-[2015.11.21-15.11.25:819][ 63]LogEditorTransaction: Undo Edit Mobility
-[2015.11.21-15.11.52:650][925]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.11.52:650][925]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.11.52:650][925]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:11:52 PM)
-[2015.11.21-15.11.52:650][925]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.11.52:967][925]LogPlayLevel: PIE: StaticDuplicateObject took: (0.316808s)
-[2015.11.21-15.11.52:970][925]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.11.52:970][925]LogPlayLevel: PIE: World Init took: (0.003282s)
-[2015.11.21-15.11.52:971][925]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.320454s)
-[2015.11.21-15.11.53:006][925]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.11.53:011][925]LogInit: FAudioDevice initialized.
-[2015.11.21-15.11.53:045][925]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.11.53:242][925]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.11.53
-[2015.11.21-15.11.53:242][925]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.11.53:243][925]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.11.53:245][925]LogWorld: Bringing up level for play took: 0.194919
-[2015.11.21-15.11.53:250][925]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 1.228
-[2015.11.21-15.11.53:250][925]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.11.56:467][ 66]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.11.56:534][ 66]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.11.56:570][ 66]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000DE7A36A0
-[2015.11.21-15.11.59:632][168]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.11.59:632][168]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.11.59:632][168]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:11:59 PM)
-[2015.11.21-15.11.59:633][168]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.11.59:956][168]LogPlayLevel: PIE: StaticDuplicateObject took: (0.323067s)
-[2015.11.21-15.11.59:957][168]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.11.59:957][168]LogPlayLevel: PIE: World Init took: (0.001263s)
-[2015.11.21-15.11.59:957][168]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.324572s)
-[2015.11.21-15.11.59:990][168]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.11.59:995][168]LogInit: FAudioDevice initialized.
-[2015.11.21-15.12.00:039][168]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.12.00:224][168]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.12.00
-[2015.11.21-15.12.00:224][168]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.00:224][168]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.00:226][168]LogWorld: Bringing up level for play took: 0.181180
-[2015.11.21-15.12.00:286][168]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.264
-[2015.11.21-15.12.00:286][168]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.03:287][448]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.03:344][448]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.03:409][449]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D24D5D00
-[2015.11.21-15.12.04:381][497]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.04:381][497]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.12.04:382][497]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:12:04 PM)
-[2015.11.21-15.12.04:382][497]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.12.04:692][497]LogPlayLevel: PIE: StaticDuplicateObject took: (0.310545s)
-[2015.11.21-15.12.04:693][497]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.12.04:693][497]LogPlayLevel: PIE: World Init took: (0.001105s)
-[2015.11.21-15.12.04:694][497]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.311917s)
-[2015.11.21-15.12.04:727][497]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.12.04:734][497]LogInit: FAudioDevice initialized.
-[2015.11.21-15.12.04:767][497]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.12.04:952][497]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.12.04
-[2015.11.21-15.12.04:952][497]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.04:952][497]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.04:954][497]LogWorld: Bringing up level for play took: 0.182121
-[2015.11.21-15.12.04:959][497]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.938
-[2015.11.21-15.12.04:959][497]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.12:463][863]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.12:526][863]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.12:600][864]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000043A4A980
-[2015.11.21-15.12.18:435][ 61]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.18:435][ 61]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.12.18:435][ 61]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:12:18 PM)
-[2015.11.21-15.12.18:435][ 61]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.12.18:772][ 61]LogPlayLevel: PIE: StaticDuplicateObject took: (0.336182s)
-[2015.11.21-15.12.18:772][ 61]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.12.18:772][ 61]LogPlayLevel: PIE: World Init took: (0.000839s)
-[2015.11.21-15.12.18:773][ 61]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.337262s)
-[2015.11.21-15.12.18:811][ 61]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.12.18:816][ 61]LogInit: FAudioDevice initialized.
-[2015.11.21-15.12.18:850][ 61]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.12.19:038][ 61]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.12.19
-[2015.11.21-15.12.19:038][ 61]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.19:039][ 61]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.19:041][ 61]LogWorld: Bringing up level for play took: 0.186626
-[2015.11.21-15.12.19:046][ 61]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 1.027
-[2015.11.21-15.12.19:046][ 61]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.20:929][154]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.20:994][154]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.21:062][155]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000426EE7A0
-[2015.11.21-15.12.30:400][408]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.30:400][408]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.12.30:400][408]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:12:30 PM)
-[2015.11.21-15.12.30:400][408]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.12.30:707][408]LogPlayLevel: PIE: StaticDuplicateObject took: (0.306594s)
-[2015.11.21-15.12.30:708][408]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.12.30:708][408]LogPlayLevel: PIE: World Init took: (0.001233s)
-[2015.11.21-15.12.30:708][408]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.308149s)
-[2015.11.21-15.12.30:746][408]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.12.30:753][408]LogInit: FAudioDevice initialized.
-[2015.11.21-15.12.30:786][408]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.12.31:008][408]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.12.31
-[2015.11.21-15.12.31:008][408]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.31:008][408]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.12.31:011][408]LogWorld: Bringing up level for play took: 0.217960
-[2015.11.21-15.12.31:015][408]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.998
-[2015.11.21-15.12.31:016][408]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.38:777][776]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.38:842][776]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.12.38:916][777]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D24A87C0
-[2015.11.21-15.12.57:210][699]Cmd: TRANSACTION UNDO
-[2015.11.21-15.12.57:210][699]LogEditorTransaction: Undo Move Actors
-[2015.11.21-15.12.57:655][721]Cmd: TRANSACTION UNDO
-[2015.11.21-15.12.57:655][721]LogEditorTransaction: Undo Move Actors
-[2015.11.21-15.13.09:334][626]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.13.11:427][770]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0006 seconds. Added 1 classes and 2 folders.
-[2015.11.21-15.13.12:527][845]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.13.25:171][812]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.14.55:448][919]EditorErrors:Warning: Warning T_Sky_Blue: Texture is RGBA16 and cannot be represented at such high bit depth in .tga. Color will be scaled to RGBA8.
-[2015.11.21-15.17.13:036][207]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/T_Sky_Blue.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/T_Sky_Blue.uasset' is outside repository
-[2015.11.21-15.17.13:037][207]LogFactory: FactoryCreateBinary: Texture with ReimportTextureFactory (0 0 C:\Users\JaniVat\Documents\T_Sky_Blue.TGA)
-[2015.11.21-15.17.15:693][207]LogTexture:Display: Building textures: T_Sky_Blue (AutoDXT)
-[2015.11.21-15.17.17:234][211]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/T_Sky_Blue.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/T_Sky_Blue.uasset' is outside repository
-[2015.11.21-15.17.18:257][295]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.17.19:204][383]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.19:204][383]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.17.19:204][383]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:17:19 PM)
-[2015.11.21-15.17.19:204][383]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.17.19:512][383]LogPlayLevel: PIE: StaticDuplicateObject took: (0.307785s)
-[2015.11.21-15.17.19:512][383]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.17.19:513][383]LogPlayLevel: PIE: World Init took: (0.000953s)
-[2015.11.21-15.17.19:513][383]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.308953s)
-[2015.11.21-15.17.19:548][383]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.17.19:553][383]LogInit: FAudioDevice initialized.
-[2015.11.21-15.17.19:589][383]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.17.19:776][383]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.17.19
-[2015.11.21-15.17.19:776][383]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.17.19:776][383]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.17.19:778][383]LogWorld: Bringing up level for play took: 0.184964
-[2015.11.21-15.17.19:783][383]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap -0.195
-[2015.11.21-15.17.19:783][383]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.22:410][501]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.22:468][501]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.22:506][501]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001C15DA80
-[2015.11.21-15.17.30:049][558]LogSavePackage: Save=5978.944824ms
-[2015.11.21-15.17.30:049][558]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap6FD894524A1783BE817420B4C61DCD8B.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
-[2015.11.21-15.17.30:058][558]LogSavePackage: Total save time: 6064.409129ms
-[2015.11.21-15.17.30:058][558]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
-[2015.11.21-15.17.41:996][984]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.41:996][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.17.41:996][984]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:17:41 PM)
-[2015.11.21-15.17.41:996][984]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.17.42:360][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.363500s)
-[2015.11.21-15.17.42:361][984]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.17.42:361][984]LogPlayLevel: PIE: World Init took: (0.001505s)
-[2015.11.21-15.17.42:361][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.365376s)
-[2015.11.21-15.17.42:400][984]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.17.42:405][984]LogInit: FAudioDevice initialized.
-[2015.11.21-15.17.42:438][984]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.17.42:633][984]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.17.42
-[2015.11.21-15.17.42:633][984]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.17.42:633][984]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.17.42:635][984]LogWorld: Bringing up level for play took: 0.192237
-[2015.11.21-15.17.42:640][984]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.663
-[2015.11.21-15.17.42:640][984]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.45:615][125]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.45:672][125]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.17.45:709][125]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000B7CA5620
-[2015.11.21-15.18.12:308][171]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.18.12:308][171]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.18.12:309][171]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:18:12 PM)
-[2015.11.21-15.18.12:309][171]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.18.12:662][171]LogPlayLevel: PIE: StaticDuplicateObject took: (0.352861s)
-[2015.11.21-15.18.12:663][171]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.18.12:663][171]LogPlayLevel: PIE: World Init took: (0.001598s)
-[2015.11.21-15.18.12:663][171]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.354812s)
-[2015.11.21-15.18.12:700][171]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.18.12:705][171]LogInit: FAudioDevice initialized.
-[2015.11.21-15.18.12:744][171]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.18.12:965][171]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.18.12
-[2015.11.21-15.18.12:965][171]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.18.12:965][171]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.18.12:967][171]LogWorld: Bringing up level for play took: 0.217924
-[2015.11.21-15.18.12:972][171]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.996
-[2015.11.21-15.18.12:972][171]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.18.17:365][408]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.18.17:415][408]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.18.17:485][409]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000209174C0
-[2015.11.21-15.19.02:303][547]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.05:076][679]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.05:123][679]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/C_Sky_Horizon_Color" FILE="../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" SILENT=true
-[2015.11.21-15.19.05:128][679]LogSavePackage: Save=2.079488ms
-[2015.11.21-15.19.05:128][679]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/C_Sky_Horizon_Color3A4967AE491EDD3AAE7D188CE59BF935.tmp' to '../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset'
-[2015.11.21-15.19.05:131][679]LogSavePackage: Total save time: 6.197408ms
-[2015.11.21-15.19.05:131][679]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset
-[2015.11.21-15.19.05:243][686]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.07:736][812]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.07:736][812]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.19.07:736][812]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:19:07 PM)
-[2015.11.21-15.19.07:736][812]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.19.08:091][812]LogPlayLevel: PIE: StaticDuplicateObject took: (0.355082s)
-[2015.11.21-15.19.08:092][812]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.19.08:092][812]LogPlayLevel: PIE: World Init took: (0.001240s)
-[2015.11.21-15.19.08:093][812]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.356646s)
-[2015.11.21-15.19.08:123][812]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000A0756A20
-[2015.11.21-15.19.08:132][812]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.19.08:139][812]LogInit: FAudioDevice initialized.
-[2015.11.21-15.19.08:171][812]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.19.08:371][812]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.19.08
-[2015.11.21-15.19.08:371][812]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.08:371][812]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.08:373][812]LogWorld: Bringing up level for play took: 0.197330
-[2015.11.21-15.19.08:379][812]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.406
-[2015.11.21-15.19.08:379][812]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.09:303][849]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.09:362][849]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.09:400][849]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000CD400FE0
-[2015.11.21-15.19.18:055][300]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.31:619][ 57]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.31:619][ 57]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.19.31:619][ 57]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:19:31 PM)
-[2015.11.21-15.19.31:619][ 57]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.19.31:946][ 57]LogPlayLevel: PIE: StaticDuplicateObject took: (0.326775s)
-[2015.11.21-15.19.31:947][ 57]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.19.31:947][ 57]LogPlayLevel: PIE: World Init took: (0.000961s)
-[2015.11.21-15.19.31:947][ 57]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.327996s)
-[2015.11.21-15.19.31:984][ 57]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.19.31:989][ 57]LogInit: FAudioDevice initialized.
-[2015.11.21-15.19.32:025][ 57]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.19.32:238][ 57]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.19.32
-[2015.11.21-15.19.32:238][ 57]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.32:238][ 57]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.32:240][ 57]LogWorld: Bringing up level for play took: 0.211210
-[2015.11.21-15.19.32:246][ 57]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.274
-[2015.11.21-15.19.32:246][ 57]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.33:096][ 91]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.33:157][ 91]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.33:233][ 92]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000A1A1BF60
-[2015.11.21-15.19.36:703][215]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.36:743][215]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/C_Sky_Horizon_Color" FILE="../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" SILENT=true
-[2015.11.21-15.19.36:749][215]LogSavePackage: Save=3.480475ms
-[2015.11.21-15.19.36:749][215]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/C_Sky_Horizon_ColorD3A01A694767F06D0C44B08E36EA5458.tmp' to '../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset'
-[2015.11.21-15.19.36:753][215]LogSavePackage: Total save time: 9.340283ms
-[2015.11.21-15.19.36:753][215]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset
-[2015.11.21-15.19.36:853][220]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.40:579][366]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.40:579][366]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.19.40:579][366]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:19:40 PM)
-[2015.11.21-15.19.40:580][366]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.19.40:893][366]LogPlayLevel: PIE: StaticDuplicateObject took: (0.313484s)
-[2015.11.21-15.19.40:894][366]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.19.40:894][366]LogPlayLevel: PIE: World Init took: (0.001286s)
-[2015.11.21-15.19.40:895][366]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.315036s)
-[2015.11.21-15.19.40:929][366]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.19.40:934][366]LogInit: FAudioDevice initialized.
-[2015.11.21-15.19.40:967][366]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.19.41:156][366]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.19.41
-[2015.11.21-15.19.41:157][366]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.41:157][366]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.19.41:161][366]LogWorld: Bringing up level for play took: 0.189270
-[2015.11.21-15.19.41:167][366]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 1.195
-[2015.11.21-15.19.41:167][366]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.44:667][591]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.44:723][591]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.19.44:800][592]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000065327E20
-[2015.11.21-15.19.50:805][942]Cmd: TRANSACTION UNDO
-[2015.11.21-15.19.50:805][942]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.19.50:915][948]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.19.51:212][959]Cmd: TRANSACTION UNDO
-[2015.11.21-15.19.51:212][959]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.19.51:789][989]Cmd: TRANSACTION UNDO
-[2015.11.21-15.19.51:789][989]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.19.52:816][ 49]Cmd: TRANSACTION UNDO
-[2015.11.21-15.19.52:816][ 49]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.19.52:887][ 53]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset' is outside repository
-[2015.11.21-15.20.04:180][699]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset' is outside repository
-[2015.11.21-15.20.23:732][813]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset' is outside repository
-[2015.11.21-15.20.23:761][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/C_Sky_Zenith_Color" FILE="../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" SILENT=true
-[2015.11.21-15.20.23:766][813]LogSavePackage: Save=2.047230ms
-[2015.11.21-15.20.23:766][813]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/C_Sky_Zenith_ColorE44FA8554F104A572ED15A8EBFA8A46A.tmp' to '../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset'
-[2015.11.21-15.20.23:768][813]LogSavePackage: Total save time: 6.171379ms
-[2015.11.21-15.20.23:768][813]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset
-[2015.11.21-15.20.23:869][820]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset' is outside repository
-[2015.11.21-15.20.25:795][938]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.20.25:795][938]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.20.25:796][938]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:20:25 PM)
-[2015.11.21-15.20.25:796][938]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.20.26:122][938]LogPlayLevel: PIE: StaticDuplicateObject took: (0.326735s)
-[2015.11.21-15.20.26:123][938]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.20.26:124][938]LogPlayLevel: PIE: World Init took: (0.001217s)
-[2015.11.21-15.20.26:124][938]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.328243s)
-[2015.11.21-15.20.26:156][938]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.20.26:163][938]LogInit: FAudioDevice initialized.
-[2015.11.21-15.20.26:195][938]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.20.26:396][938]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.20.26
-[2015.11.21-15.20.26:397][938]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.20.26:397][938]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.20.26:399][938]LogWorld: Bringing up level for play took: 0.199593
-[2015.11.21-15.20.26:405][938]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.435
-[2015.11.21-15.20.26:405][938]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.20.27:373][983]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.20.27:428][983]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.20.27:499][984]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000054E6F560
-[2015.11.21-15.20.31:195][137]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.20.31:289][141]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset' is outside repository
-[2015.11.21-15.20.31:480][147]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.20.31:712][154]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.20.31:931][164]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.20.32:165][174]LogEditorTransaction: Undo Mouse Drag
-[2015.11.21-15.20.56:709][ 94]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.20.59:106][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/Engine_MI_Shaders/Instances/M_Shader_SimpleTranslucent_Invis.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/Engine_MI_Shaders/Instances/M_Shader_SimpleTranslucent_Invis.uasset' is outside repository
-[2015.11.21-15.20.59:106][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorShapes/Materials/M_ShapeMaster.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorShapes/Materials/M_ShapeMaster.uasset' is outside repository
-[2015.11.21-15.20.59:106][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorShellMaterials/M_ShellMaster.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorShellMaterials/M_ShellMaster.uasset' is outside repository
-[2015.11.21-15.20.59:107][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorMeshes/ColorCalibrator/M_SkinBall.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorMeshes/ColorCalibrator/M_SkinBall.uasset' is outside repository
-[2015.11.21-15.20.59:107][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset' is outside repository
-[2015.11.21-15.20.59:107][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/Tutorial/SubEditors/TutorialAssets/M_smoke_subUV_blackbody.uasset' is outside repository
-[2015.11.21-15.20.59:107][171]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/MaterialTemplates/PerfTricks/M_SpecularUsingDiffuse.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/MaterialTemplates/PerfTricks/M_SpecularUsingDiffuse.uasset' is outside repository
-[2015.11.21-15.21.01:056][234]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineResources/M_StreamingPause.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineResources/M_StreamingPause.uasset' is outside repository
-[2015.11.21-15.21.02:885][295]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorLandscapeResources/MaskBrushMaterial_Gizmo.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorLandscapeResources/MaskBrushMaterial_Gizmo.uasset' is outside repository
-[2015.11.21-15.21.02:932][297]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorLandscapeResources/MaskBrushMaterial_MaskedRegion.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EditorLandscapeResources/MaskBrushMaterial_MaskedRegion.uasset' is outside repository
-[2015.11.21-15.21.02:989][299]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/MapTemplates/MASTER_Sky_Material.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/MapTemplates/MASTER_Sky_Material.uasset' is outside repository
-[2015.11.21-15.22.36:811][474]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.22.44:824][888]BlueprintLog: New page: Compile BP_Sky_Sphere
-[2015.11.21-15.22.44:993][888]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D493F380
-[2015.11.21-15.22.45:006][888]BlueprintEditorCompileResults: Info [2960.85] Compile of BP_Sky_Sphere successful! [in 181 ms]
-[2015.11.21-15.22.45:103][890]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.22.45:685][918]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.22.45:723][918]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/BP_Sky_Sphere" FILE="../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" SILENT=true
-[2015.11.21-15.22.45:931][918]LogSavePackage: Save=204.929047ms
-[2015.11.21-15.22.45:931][918]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/BP_Sky_Sphere1D6D00A44228235A1B639CA7A264788B.tmp' to '../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset'
-[2015.11.21-15.22.45:934][918]LogSavePackage: Total save time: 209.545851ms
-[2015.11.21-15.22.45:934][918]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset
-[2015.11.21-15.22.46:010][922]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.22.48:853][127]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.22.48:853][127]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.22.48:854][127]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:22:48 PM)
-[2015.11.21-15.22.48:854][127]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.22.49:182][127]LogPlayLevel: PIE: StaticDuplicateObject took: (0.327790s)
-[2015.11.21-15.22.49:182][127]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.22.49:183][127]LogPlayLevel: PIE: World Init took: (0.000971s)
-[2015.11.21-15.22.49:183][127]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.329000s)
-[2015.11.21-15.22.49:218][127]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.22.49:223][127]LogInit: FAudioDevice initialized.
-[2015.11.21-15.22.49:254][127]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.22.49:441][127]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.22.49
-[2015.11.21-15.22.49:441][127]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.22.49:441][127]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.22.49:443][127]LogWorld: Bringing up level for play took: 0.185208
-[2015.11.21-15.22.49:450][127]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 1.488
-[2015.11.21-15.22.49:451][127]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.00:760][657]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.00:816][657]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.00:854][657]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000007CB70220
-[2015.11.21-15.23.06:290][872]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.11:877][ 95]BlueprintLog: New page: Compile BP_Sky_Sphere
-[2015.11.21-15.23.12:038][ 95]BlueprintEditorCompileResults: Info [2987.88] Compile of BP_Sky_Sphere successful! [in 161 ms]
-[2015.11.21-15.23.12:140][ 97]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.12:568][112]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.12:607][112]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/BP_Sky_Sphere" FILE="../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" SILENT=true
-[2015.11.21-15.23.12:832][112]LogSavePackage: Save=222.905075ms
-[2015.11.21-15.23.12:832][112]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/BP_Sky_SphereECC039214089BD0F6A2A5884CF432263.tmp' to '../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset'
-[2015.11.21-15.23.12:835][112]LogSavePackage: Total save time: 226.910468ms
-[2015.11.21-15.23.12:835][112]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset
-[2015.11.21-15.23.12:921][116]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.13:368][135]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.13:368][135]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.23.13:368][135]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:23:13 PM)
-[2015.11.21-15.23.13:369][135]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.23.13:710][135]LogPlayLevel: PIE: StaticDuplicateObject took: (0.341056s)
-[2015.11.21-15.23.13:711][135]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.23.13:711][135]LogPlayLevel: PIE: World Init took: (0.001091s)
-[2015.11.21-15.23.13:711][135]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.342388s)
-[2015.11.21-15.23.13:747][135]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.23.13:777][135]LogInit: FAudioDevice initialized.
-[2015.11.21-15.23.13:822][135]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.23.14:026][135]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.23.14
-[2015.11.21-15.23.14:027][135]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.23.14:027][135]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.23.14:029][135]LogWorld: Bringing up level for play took: 0.200526
-[2015.11.21-15.23.14:034][135]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.073
-[2015.11.21-15.23.14:034][135]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.39:099][392]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.39:153][392]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.39:190][392]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000D3C0CCC0
-[2015.11.21-15.23.48:919][797]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.52:749][954]BlueprintLog: New page: Compile BP_Sky_Sphere
-[2015.11.21-15.23.52:910][954]BlueprintEditorCompileResults: Info [3028.76] Compile of BP_Sky_Sphere successful! [in 160 ms]
-[2015.11.21-15.23.52:982][955]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.53:350][967]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.53:389][967]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/EngineSky/BP_Sky_Sphere" FILE="../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" SILENT=true
-[2015.11.21-15.23.53:624][967]LogSavePackage: Save=233.008545ms
-[2015.11.21-15.23.53:624][967]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/BP_Sky_SphereD8181FC9413E6CF64115FA82F1C93A20.tmp' to '../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset'
-[2015.11.21-15.23.53:627][967]LogSavePackage: Total save time: 236.833211ms
-[2015.11.21-15.23.53:627][967]LogSavePackage:Warning: Finished SavePackage ../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset
-[2015.11.21-15.23.53:721][971]SourceControl: Info fatal: C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset: 'C:/Program Files/Unreal Engine/4.9/Engine/Content/EngineSky/BP_Sky_Sphere.uasset' is outside repository
-[2015.11.21-15.23.54:043][985]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.23.54:043][985]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2015.11.21-15.23.54:044][985]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 7:23:54 PM)
-[2015.11.21-15.23.54:044][985]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
-[2015.11.21-15.23.54:367][985]LogPlayLevel: PIE: StaticDuplicateObject took: (0.323323s)
-[2015.11.21-15.23.54:368][985]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-15.23.54:368][985]LogPlayLevel: PIE: World Init took: (0.001317s)
-[2015.11.21-15.23.54:369][985]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.324996s)
-[2015.11.21-15.23.54:408][985]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.11.21-15.23.54:415][985]LogInit: FAudioDevice initialized.
-[2015.11.21-15.23.54:475][985]LogWorld: Game class is 'VehicleAdvGameMode_C'
-[2015.11.21-15.23.54:670][985]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-17.23.54
-[2015.11.21-15.23.54:670][985]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.23.54:670][985]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.11.21-15.23.54:672][985]LogWorld: Bringing up level for play took: 0.190587
-[2015.11.21-15.23.54:677][985]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 0.718
-[2015.11.21-15.23.54:677][985]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.24.30:569][ 60]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.24.30:625][ 60]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
-[2015.11.21-15.24.30:664][ 60]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000FD84C20
-[2015.11.21-15.24.31:978][157]LogEditorViewport: Clicking on Component (context menu): StaticMeshComponent (Sky Sphere mesh)
-[2015.11.21-15.24.42:755][426]LogSavePackage: Save=6021.471680ms
-[2015.11.21-15.24.42:755][426]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMapBB00FF2A4FCCFA39402C9A9E7037E837.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
-[2015.11.21-15.24.42:764][426]LogSavePackage: Total save time: 6092.813395ms
-[2015.11.21-15.24.42:765][426]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
-[2015.11.21-15.25.46:837][373]LogParticles: Destroying 0 GPU particle simulations 
-=======
-﻿[2015.11.21-14.07.03:024][  0]Log file open, 11/21/15 16:07:03
-[2015.11.21-14.07.03:024][  0]LogInit:Display: Running engine for game: AutumnJam2015
-[2015.11.21-14.07.03:024][  0]LogInit:Display: RandInit(1432702502) SRandInit(1432702502).
-[2015.11.21-14.07.03:024][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2015.11.21-14.07.03:024][  0]LogStats: Stats thread started at 0.085281
-[2015.11.21-14.07.03:024][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
-[2015.11.21-14.07.03:024][  0]LogInit: API Version: 2672455
-[2015.11.21-14.07.03:024][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
-[2015.11.21-14.07.03:024][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
-[2015.11.21-14.07.03:024][  0]LogInit: Build Configuration: Development
-[2015.11.21-14.07.03:024][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
-[2015.11.21-14.07.03:024][  0]LogInit: Command line: 
-[2015.11.21-14.07.03:024][  0]LogInit: Base directory: C:/Program Files/Unreal Engine/4.9/Engine/Binaries/Win64/
-[2015.11.21-14.07.03:024][  0]LogInit: Rocket: 1
-[2015.11.21-14.07.03:034][  0]LogInit: Using libcurl 7.41.0
-[2015.11.21-14.07.03:034][  0]LogInit:  - built for x86_64-pc-win32
-[2015.11.21-14.07.03:034][  0]LogInit:  - supports SSL with WinSSL
-[2015.11.21-14.07.03:034][  0]LogInit:  - other features:
-[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_SSL
-[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_IPV6
-[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2015.11.21-14.07.03:034][  0]LogInit:      CURL_VERSION_IDN
-[2015.11.21-14.07.03:034][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2015.11.21-14.07.03:034][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2015.11.21-14.07.03:034][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2015.11.21-14.07.03:034][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2015.11.21-14.07.03:034][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2015.11.21-14.07.03:042][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.11.21-14.07.03:050][  0]LogInit: Object subsystem initialized
-[2015.11.21-14.07.03:052][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.21-14.07.03:052][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.11.21-14.07.03:062][  0]LogInit: Computer: AOTA1-1L151-08
-[2015.11.21-14.07.03:062][  0]LogInit: User: EemeliSyy
-[2015.11.21-14.07.03:062][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.11.21-14.07.03:062][  0]LogInit: High frequency timer resolution =2.728076 MHz
-[2015.11.21-14.07.03:062][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2015.11.21-14.07.03:062][  0]LogMemory: Platform Memory Stats for Windows
-[2015.11.21-14.07.03:062][  0]LogMemory: Process Physical Memory: 54.52 MB used, 54.52 MB peak
-[2015.11.21-14.07.03:062][  0]LogMemory: Process Virtual Memory: 57.04 MB used, 57.04 MB peak
-[2015.11.21-14.07.03:062][  0]LogMemory: Physical Memory: 7052.08 MB used, 16291.31 MB total
-[2015.11.21-14.07.03:062][  0]LogMemory: Virtual Memory: 338.70 MB used, 8388608.00 MB total
-[2015.11.21-14.07.03:113][  0]LogTextLocalizationManager: No translations for ('fi-FI') exist, falling back to 'en' for localization and internationalization data.
-[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA Quadro K2200 (Feature Level 11_0)
-[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Adapter has 4035MB of dedicated video memory, 0MB of dedicated system memory, and 7889MB of shared system memory, 2 output[s]
-[2015.11.21-14.07.04:110][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.11.21-14.07.04:115][  0]LogD3D11RHI: !Direct3DDevice
-[2015.11.21-14.07.04:115][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2015.11.21-14.07.04:125][  0]LogD3D11RHI: Async texture creation enabled
-[2015.11.21-14.07.04:140][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Intermediate/Shaders/WorkingDirectory/7760/).
-[2015.11.21-14.07.04:140][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Intermediate/Shaders/tmp/582DD6B74533448D9A4FAD93F6156C73/'.
-[2015.11.21-14.07.04:140][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2015.11.21-14.07.05:583][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2015.11.21-14.07.05:590][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2015.11.21-14.07.05:597][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2015.11.21-14.07.05:604][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2015.11.21-14.07.05:611][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2015.11.21-14.07.05:616][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2015.11.21-14.07.05:625][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2015.11.21-14.07.05:632][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2015.11.21-14.07.05:637][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2015.11.21-14.07.05:643][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2015.11.21-14.07.05:647][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2015.11.21-14.07.05:652][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2015.11.21-14.07.05:654][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2015.11.21-14.07.05:675][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2015.11.21-14.07.05:679][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2015.11.21-14.07.05:684][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2015.11.21-14.07.05:689][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2015.11.21-14.07.05:689][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.11.21-14.07.05:797][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2015.11.21-14.07.05:848][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2015.11.21-14.07.06:017][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.11.21-14.07.06:029][  0]LogDerivedDataCache: Using Local data cache path C:/Users/eemelisyy/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.11.21-14.07.06:237][  0]LogInit: Selected Device Profile: [Windows]
-[2015.11.21-14.07.06:237][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.11.21-14.07.06:269][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.11.21-14.07.06:269][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.11.21-14.07.06:684][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.11.21-14.07.07:587][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.11.21-14.07.07:691][  0]LogAssetRegistry: FAssetRegistry took 0.0104 seconds to start up
-[2015.11.21-14.07.07:919][  0]SourceControl: Info Source control is disabled
-[2015.11.21-14.07.08:211][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.11.21-14.07.08:323][  0]LogObj: 28361 objects as part of root set at end of initial load.
-[2015.11.21-14.07.08:323][  0]LogUObjectAllocator: 6038864 out of 0 bytes used by permanent object pool.
-[2015.11.21-14.07.08:398][  0]LogEngine: Initializing Engine...
-[2015.11.21-14.07.08:404][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
-[2015.11.21-14.07.08:405][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2015.11.21-14.07.08:559][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.11.21-14.07.08:563][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2015.11.21-14.07.08:594][  0]LogInit: FAudioDevice initialized.
-[2015.11.21-14.07.08:625][  0]LogDerivedDataCache: Saved boot cache 0.03s 41MB C:/Users/eemelisyy/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
-[2015.11.21-14.07.08:630][  0]LogInit: Texture streaming: Enabled
-[2015.11.21-14.07.08:638][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
-[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 1948406f4c988630dacebb868385c297|e7c5155694e34236a800dc8a3a5ed50d|c69064c8-796b-451a-aad8-b77b294f1212
-[2015.11.21-14.07.08:638][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2015.11.21-14.07.08:664][  0]LogInit: Transaction tracking system initialized
-[2015.11.21-14.07.08:698][  0]BlueprintLog: New page: Editor Load
-[2015.11.21-14.07.08:793][  0]LocalizationService: Info Localization service is disabled
-[2015.11.21-14.07.08:884][  0]LogConsoleResponse:Display: 
-[2015.11.21-14.07.09:022][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.11.21-14.07.09:102][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/' took 0.02s
-[2015.11.21-14.07.09:102][  0]Cmd: MAP LOAD FILE="../../../../../../Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.11.21-14.07.09:102][  0]LightingResults: New page: Lighting Build
-[2015.11.21-14.07.09:109][  0]MapCheck: New page: Map Check
-[2015.11.21-14.07.09:109][  0]LightingResults: New page: Lighting Build
-[2015.11.21-14.07.09:119][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001FCBA160
-[2015.11.21-14.07.10:011][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
-[2015.11.21-14.07.10:773][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.11.21-14.07.10:773][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.11.21-14.07.10:840][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 66.374ms to complete.
-[2015.11.21-14.07.10:840][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 1.738
-[2015.11.21-14.07.10:955][  0]LogCollectionManager: Loaded 0 collections in 0.002593 seconds
-[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Saved/Collections/' took 0.01s
-[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for directory 'C:/Users/eemelisyy/Documents/Unreal Projects/AutumnGameJam-2015/Content/Developers/EemeliSyy/Collections/' took 0.00s
-[2015.11.21-14.07.10:976][  0]LogFileCache: Scanning file cache for 
->>>>>>> f9e928e2a7ed0819ab93a71044b2c226bf997bf4
+﻿[2015.11.21-15.49.09:199][  0]Log file open, 11/21/15 17:49:09
+[2015.11.21-15.49.09:199][  0]LogInit:Display: Running engine for game: AutumnJam2015
+[2015.11.21-15.49.09:199][  0]LogInit:Display: RandInit(-1139860633) SRandInit(-1139860632).
+[2015.11.21-15.49.09:199][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.11.21-15.49.09:199][  0]LogStats: Stats thread started at 0.082175
+[2015.11.21-15.49.09:199][  0]LogInit: Version: 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.21-15.49.09:199][  0]LogInit: API Version: 2672455
+[2015.11.21-15.49.09:199][  0]LogInit: Compiled (64-bit): Sep 28 2015 10:25:44
+[2015.11.21-15.49.09:199][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.11.21-15.49.09:199][  0]LogInit: Build Configuration: Development
+[2015.11.21-15.49.09:199][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.9
+[2015.11.21-15.49.09:199][  0]LogInit: Command line:  
+[2015.11.21-15.49.09:199][  0]LogInit: Base directory: C:/Program Files/Unreal Engine/4.9/Engine/Binaries/Win64/
+[2015.11.21-15.49.09:199][  0]LogInit: Rocket: 1
+[2015.11.21-15.49.09:209][  0]LogInit: Using libcurl 7.41.0
+[2015.11.21-15.49.09:209][  0]LogInit:  - built for x86_64-pc-win32
+[2015.11.21-15.49.09:209][  0]LogInit:  - supports SSL with WinSSL
+[2015.11.21-15.49.09:209][  0]LogInit:  - other features:
+[2015.11.21-15.49.09:209][  0]LogInit:      CURL_VERSION_SSL
+[2015.11.21-15.49.09:209][  0]LogInit:      CURL_VERSION_IPV6
+[2015.11.21-15.49.09:209][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.11.21-15.49.09:209][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.11.21-15.49.09:209][  0]LogInit:      CURL_VERSION_IDN
+[2015.11.21-15.49.09:209][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.11.21-15.49.09:209][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.11.21-15.49.09:209][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.11.21-15.49.09:209][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.11.21-15.49.09:209][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.11.21-15.49.09:217][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.11.21-15.49.09:224][  0]LogInit: Object subsystem initialized
+[2015.11.21-15.49.09:226][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.21-15.49.09:226][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.11.21-15.49.09:235][  0]LogInit: Computer: AOTA1-1L151-09D
+[2015.11.21-15.49.09:235][  0]LogInit: User: JaniVat
+[2015.11.21-15.49.09:235][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.11.21-15.49.09:235][  0]LogInit: High frequency timer resolution =2.728076 MHz
+[2015.11.21-15.49.09:235][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2015.11.21-15.49.09:235][  0]LogMemory: Platform Memory Stats for Windows
+[2015.11.21-15.49.09:235][  0]LogMemory: Process Physical Memory: 54.58 MB used, 54.58 MB peak
+[2015.11.21-15.49.09:235][  0]LogMemory: Process Virtual Memory: 58.98 MB used, 58.98 MB peak
+[2015.11.21-15.49.09:235][  0]LogMemory: Physical Memory: 4205.24 MB used, 16291.31 MB total
+[2015.11.21-15.49.09:235][  0]LogMemory: Virtual Memory: 341.02 MB used, 8388608.00 MB total
+[2015.11.21-15.49.09:278][  0]LogTextLocalizationManager: No translations for ('fi-FI') exist, falling back to 'en' for localization and internationalization data.
+[2015.11.21-15.49.10:184][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA Quadro K2200 (Feature Level 11_0)
+[2015.11.21-15.49.10:184][  0]LogD3D11RHI: Adapter has 4035MB of dedicated video memory, 0MB of dedicated system memory, and 7889MB of shared system memory, 2 output[s]
+[2015.11.21-15.49.10:184][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.11.21-15.49.10:189][  0]LogD3D11RHI: !Direct3DDevice
+[2015.11.21-15.49.10:189][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2015.11.21-15.49.10:198][  0]LogD3D11RHI: Async texture creation enabled
+[2015.11.21-15.49.10:212][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Intermediate/Shaders/WorkingDirectory/2816/).
+[2015.11.21-15.49.10:212][  0]LogShaderCompilers: Cleaned the shader compiler working directory '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Intermediate/Shaders/tmp/143B87E84B67E04FBEAD1CB70C523FC9/'.
+[2015.11.21-15.49.10:212][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.11.21-15.49.11:684][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2015.11.21-15.49.11:690][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.11.21-15.49.11:697][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.11.21-15.49.11:703][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.11.21-15.49.11:708][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.11.21-15.49.11:713][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.11.21-15.49.11:717][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.11.21-15.49.11:721][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.11.21-15.49.11:724][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.11.21-15.49.11:728][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.11.21-15.49.11:732][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.11.21-15.49.11:736][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.11.21-15.49.11:737][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2015.11.21-15.49.11:754][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.11.21-15.49.11:757][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.11.21-15.49.11:762][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.11.21-15.49.11:766][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.11.21-15.49.11:766][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.11.21-15.49.11:862][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.11.21-15.49.11:912][  0]LogDerivedDataCache: Loaded boot cache 0.05s 41MB C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.21-15.49.11:912][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc
+[2015.11.21-15.49.11:912][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.11.21-15.49.11:913][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.11.21-15.49.11:913][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.11.21-15.49.11:913][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.11.21-15.49.12:086][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.11.21-15.49.12:097][  0]LogDerivedDataCache: Using Local data cache path C:/Users/JaniVat/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.11.21-15.49.12:295][  0]LogInit: Selected Device Profile: [Windows]
+[2015.11.21-15.49.12:295][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.11.21-15.49.12:324][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.11.21-15.49.12:324][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.11.21-15.49.12:724][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.11.21-15.49.13:601][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.11.21-15.49.13:710][  0]LogAssetRegistry: FAssetRegistry took 0.0104 seconds to start up
+[2015.11.21-15.49.13:903][  0]SourceControl: Info Source control is disabled
+[2015.11.21-15.49.14:748][  0]LogLinker:Warning: Asset '../../../Engine/Plugins/Runtime/LeapMotionController/Content/LM_PassthroughMaterial.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.11.21-15.49.14:841][  0]LogObj: 28361 objects as part of root set at end of initial load.
+[2015.11.21-15.49.14:841][  0]LogUObjectAllocator: 6038872 out of 0 bytes used by permanent object pool.
+[2015.11.21-15.49.14:903][  0]LogEngine: Initializing Engine...
+[2015.11.21-15.49.14:907][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.7.0.0
+[2015.11.21-15.49.14:907][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2015.11.21-15.49.15:062][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.11.21-15.49.15:067][  0]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.11.21-15.49.15:074][  0]LogInit: FAudioDevice initialized.
+[2015.11.21-15.49.15:097][  0]LogDerivedDataCache: Saved boot cache 0.02s 41MB C:/Users/JaniVat/AppData/Local/UnrealEngine/4.9/DerivedDataCache/Boot.ddc.
+[2015.11.21-15.49.15:101][  0]LogInit: Texture streaming: Enabled
+[2015.11.21-15.49.15:109][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.11.21-15.49.15:109][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.9.2-2707645+++depot+UE4-Releases+4.9
+[2015.11.21-15.49.15:109][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId 3afa574c41b3923ec6dee9ba588df77b|b5858cd212d14ef682ade8fe55d52d71|8c56995a-db47-40ba-9f21-ee7864df72ac
+[2015.11.21-15.49.15:109][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.11.21-15.49.15:128][  0]LogInit: Transaction tracking system initialized
+[2015.11.21-15.49.15:158][  0]BlueprintLog: New page: Editor Load
+[2015.11.21-15.49.15:255][  0]LocalizationService: Info Localization service is disabled
+[2015.11.21-15.49.15:344][  0]LogConsoleResponse:Display: 
+[2015.11.21-15.49.15:491][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.11.21-15.49.15:595][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/' took 0.02s
+[2015.11.21-15.49.15:898][  0]Cmd: MAP LOAD FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.11.21-15.49.15:898][  0]LightingResults: New page: Lighting Build
+[2015.11.21-15.49.15:902][  0]MapCheck: New page: Map Check
+[2015.11.21-15.49.15:902][  0]LightingResults: New page: Lighting Build
+[2015.11.21-15.49.15:912][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000023E3BCE0
+[2015.11.21-15.49.17:060][  0]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.11.21-15.49.17:870][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.11.21-15.49.17:870][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.11.21-15.49.17:942][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 71.278ms to complete.
+[2015.11.21-15.49.17:942][  0]LogFileHelpers: Loading map 'VehicleAdvExampleMap' took 2.044
+[2015.11.21-15.49.18:054][  0]LogCollectionManager: Loaded 0 collections in 0.002506 seconds
+[2015.11.21-15.49.18:124][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/Collections/' took 0.02s
+[2015.11.21-15.49.18:124][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/Developers/JaniVat/Collections/' took 0.03s
+[2015.11.21-15.49.18:124][  0]LogFileCache: Scanning file cache for directory 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/Collections/' took 0.01s
+[2015.11.21-15.49.18:124][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 1867 classes and 333 folders.
+[2015.11.21-15.49.18:223][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2015.11.21-15.49.18:313][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.11.21-15.49.18:427][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.11.21-15.49.18:432][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2015.11.21-15.49.18:519][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.11.21-15.49.18:523][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.11.21-15.49.18:560][  0]LogLoad: Full Startup: 9.96 seconds (BP compile: 0.05 seconds)
+[2015.11.21-15.49.18:622][  0]SourceControl: Info On branch master
+[2015.11.21-15.49.18:622][  0]SourceControl: Info Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+[2015.11.21-15.49.18:622][  0]SourceControl: Info   (use "git pull" to update your local branch)
+[2015.11.21-15.49.18:622][  0]SourceControl: Info Changes not staged for commit:
+[2015.11.21-15.49.18:622][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2015.11.21-15.49.18:622][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2015.11.21-15.49.18:622][  0]SourceControl: Info 	modified:   Saved/Logs/AutumnJam2015.log
+[2015.11.21-15.49.18:622][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2015.11.21-15.49.18:622][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2015.11.21-15.49.18:859][  0]LogRenderer: Reallocating scene render targets to support 1228x628 (Frame:2).
+[2015.11.21-15.49.18:863][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2015.11.21-15.49.19:019][  3]LogAssetRegistry: Asset discovery search completed in 5.3207 seconds
+[2015.11.21-15.49.19:019][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2015.11.21-15.49.19:019][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000021 seconds (updated 0 objects)
+[2015.11.21-16.06.06:073][915]LogSavePackage: Save=6911.847168ms
+[2015.11.21-16.06.06:073][915]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/VehicleAdvExampleMap5864F78744432AD521ACCEAF324CA784.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap'
+[2015.11.21-16.06.06:083][915]LogSavePackage: Total save time: 6980.983302ms
+[2015.11.21-16.06.06:083][915]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2015.11.21-16.06.07:533][  8]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2015.11.21-16.06.07:534][  8]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2015.11.21-16.06.07:534][  8]PIE: New page: PIE session: VehicleAdvExampleMap (Nov 21, 2015, 8:06:07 PM)
+[2015.11.21-16.06.07:534][  8]LogPlayLevel: Creating play world package: /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap
+[2015.11.21-16.06.07:846][  8]LogPlayLevel: PIE: StaticDuplicateObject took: (0.311740s)
+[2015.11.21-16.06.07:847][  8]LogAIModule: Creating AISystem for world VehicleAdvExampleMap
+[2015.11.21-16.06.07:847][  8]LogPlayLevel: PIE: World Init took: (0.001424s)
+[2015.11.21-16.06.07:847][  8]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap to /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap (0.313440s)
+[2015.11.21-16.06.07:867][  8]LogInit: XAudio2 using 'Speakers (Logitech H555 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.11.21-16.06.07:873][  8]LogInit: FAudioDevice initialized.
+[2015.11.21-16.06.08:375][  8]LogWorld: Game class is 'VehicleAdvGameMode_C'
+[2015.11.21-16.06.08:789][  8]LogWorld: Bringing World /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap up for play (max tick rate 0) at 2015.11.21-18.06.08
+[2015.11.21-16.06.08:789][  8]LogActor:Warning: GameSession /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.21-16.06.08:790][  8]LogActor:Warning: GameNetworkManager /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.11.21-16.06.08:791][  8]LogWorld: Bringing up level for play took: 0.412153
+[2015.11.21-16.06.11:606][  8]LoadErrors: Info The Skeleton  VehicleSkeleton  is missing bones that SkeletalMesh  Vehicle_SkelMesh   needs. They will be added now. Please save the Skeleton!
+[2015.11.21-16.06.11:612][  8]PIE: Info Play in editor start time for /Game/VehicleAdvBP/Maps/UEDPIE_0_VehicleAdvExampleMap 3.711
+[2015.11.21-16.06.11:613][  8]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2015.11.21-16.06.57:126][271]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2015.11.21-16.06.57:734][271]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap' with GeneratedClass '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap_C' with ClassGeneratedBy '/Game/VehicleAdvBP/Maps/VehicleAdvExampleMap.VehicleAdvExampleMap:PersistentLevel.VehicleAdvExampleMap'
+[2015.11.21-16.06.57:734][271]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComp) Not registered. Aborting.
+[2015.11.21-16.06.57:769][271]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000004001F80
+[2015.11.21-16.13.27:805][510]SourceControl: Info On branch master
+[2015.11.21-16.13.27:805][510]SourceControl: Info Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+[2015.11.21-16.13.27:805][510]SourceControl: Info   (use "git pull" to update your local branch)
+[2015.11.21-16.13.27:805][510]SourceControl: Info Changes not staged for commit:
+[2015.11.21-16.13.27:805][510]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2015.11.21-16.13.27:805][510]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2015.11.21-16.13.27:805][510]SourceControl: Info 	modified:   Saved/Logs/AutumnJam2015.log
+[2015.11.21-16.13.27:805][510]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2015.11.21-16.13.29:749][510]LogSavePackage: Save=729.846619ms
+[2015.11.21-16.13.29:749][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Ground_Grass_N21FC69FA4B72793C650F8FB8F5121F91.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Ground_Grass_N.uasset'
+[2015.11.21-16.13.29:751][510]LogSavePackage: Total save time: 732.252326ms
+[2015.11.21-16.13.29:751][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.13.30:535][510]LogSavePackage: Save=1.711096ms
+[2015.11.21-16.13.30:535][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Ground_Grass_N5341CD5D4FB660B1FE5070874E777B40.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Ground_Grass_N.uasset'
+[2015.11.21-16.13.30:538][510]LogSavePackage: Total save time: 15.063364ms
+[2015.11.21-16.13.30:538][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.13.30:730][510]LogSavePackage: Save=175.110962ms
+[2015.11.21-16.13.30:730][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_GDC_Grass01_D_NoisyAlphaE23BB23E457E3D6170963FBEA1DB1A12.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset'
+[2015.11.21-16.13.30:732][510]LogSavePackage: Total save time: 177.298214ms
+[2015.11.21-16.13.30:732][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.13.31:521][510]LogSavePackage: Save=1.577302ms
+[2015.11.21-16.13.31:521][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_GDC_Grass01_D_NoisyAlpha04EF9ABD4FC81CF01347EEB205CAB9C3.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset'
+[2015.11.21-16.13.31:524][510]LogSavePackage: Total save time: 14.720999ms
+[2015.11.21-16.13.31:524][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.13.31:733][510]LogSavePackage: Save=176.601746ms
+[2015.11.21-16.13.31:733][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_MacroVariation2AF94F624EA3B93A4BB173831746D1A5.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_MacroVariation.uasset'
+[2015.11.21-16.13.31:735][510]LogSavePackage: Total save time: 178.940393ms
+[2015.11.21-16.13.31:735][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_MacroVariation.uasset
+[2015.11.21-16.13.32:430][510]LogSavePackage: Save=1.482730ms
+[2015.11.21-16.13.32:430][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_MacroVariationE5BAEA044B8D16C6CC3E3E97454A9641.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_MacroVariation.uasset'
+[2015.11.21-16.13.32:434][510]LogSavePackage: Total save time: 13.756949ms
+[2015.11.21-16.13.32:434][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_MacroVariation.uasset
+[2015.11.21-16.13.32:579][510]LogSavePackage: Save=128.166153ms
+[2015.11.21-16.13.32:579][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Perlin_Noise_M3B332AF646BDFF88B31E71B807FEDCEF.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Perlin_Noise_M.uasset'
+[2015.11.21-16.13.32:581][510]LogSavePackage: Total save time: 130.800974ms
+[2015.11.21-16.13.32:581][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.13.33:135][510]LogSavePackage: Save=2.639223ms
+[2015.11.21-16.13.33:135][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Perlin_Noise_MF09A6ADB432EC1D430FE7CB06908306E.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Perlin_Noise_M.uasset'
+[2015.11.21-16.13.33:139][510]LogSavePackage: Total save time: 21.383937ms
+[2015.11.21-16.13.33:139][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.13.33:194][510]LogSavePackage: Save=25.206043ms
+[2015.11.21-16.13.33:194][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_Ground_Grass20F00DCED42E05A5CF1710E8701F8EBB3.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_Ground_Grass2.uasset'
+[2015.11.21-16.13.33:196][510]LogSavePackage: Total save time: 27.515732ms
+[2015.11.21-16.13.33:196][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.13.33:379][510]LogSavePackage: Save=1.535148ms
+[2015.11.21-16.13.33:379][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_Ground_Grass28D03F39F42BAE5663568C69D26FD7A8A.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_Ground_Grass2.uasset'
+[2015.11.21-16.13.33:381][510]LogSavePackage: Total save time: 6.053716ms
+[2015.11.21-16.13.33:381][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.13.33:490][510]LogSavePackage: Save=31.571335ms
+[2015.11.21-16.13.33:490][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_AssetPlatform_GrassA256C07E447F9E619DA5DE8977DBE95C.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_AssetPlatform_Grass.uasset'
+[2015.11.21-16.13.33:492][510]LogSavePackage: Total save time: 33.920608ms
+[2015.11.21-16.13.33:492][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.13.33:699][510]LogSavePackage: Save=2.126407ms
+[2015.11.21-16.13.33:699][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_AssetPlatform_Grass63AD29FD4DAD937BE508709148C98AE9.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_AssetPlatform_Grass.uasset'
+[2015.11.21-16.13.33:701][510]LogSavePackage: Total save time: 26.430715ms
+[2015.11.21-16.13.33:701][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.13.33:918][510]LogSavePackage: Save=200.009827ms
+[2015.11.21-16.13.33:918][510]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_ground_Moss_DCD4867634D3E4A92CD6B4786F0D32409.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_ground_Moss_D.uasset'
+[2015.11.21-16.13.33:920][510]LogSavePackage: Total save time: 202.377427ms
+[2015.11.21-16.13.33:920][510]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_ground_Moss_D.uasset
+[2015.11.21-16.13.35:312][510]LogActorComponent: UnregisterComponent: (/Engine/Transient.MovementComp) Not registered. Aborting.
+[2015.11.21-16.13.35:488][510]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/Grass/T_ground_Moss_D'
+[2015.11.21-16.13.35:489][510]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/Grass/T_ground_Moss_D'
+[2015.11.21-16.13.35:489][510]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/KiteDemo/Environments/GroundTiles/Grass/T_ground_Moss_D.T_ground_Moss_D'
+[2015.11.21-16.13.35:489][510]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/GroundTiles/Grass/T_ground_Moss_D'
+[2015.11.21-16.13.35:489][510]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/KiteDemo/Environments/GroundTiles/Grass/T_ground_Moss_D.T_ground_Moss_D'
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info On branch master
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info   (use "git pull" to update your local branch)
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info Changes to be committed:
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info   (use "git reset HEAD <file>..." to unstage)
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_MacroVariation.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_ground_Moss_D.uasset
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info Changes not staged for commit:
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2015.11.21-16.13.47:463][ 23]SourceControl: Info 	modified:   Saved/Logs/AutumnJam2015.log
+[2015.11.21-16.13.48:732][ 23]LogSavePackage: Save=496.681915ms
+[2015.11.21-16.13.48:732][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_01_Atlas_Billboards_Normal_Tex13AFB7DE4B4DC56C1D4061BA42DCB32E.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Normal_Tex.uasset'
+[2015.11.21-16.13.48:734][ 23]LogSavePackage: Total save time: 498.805020ms
+[2015.11.21-16.13.48:734][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Normal_Tex.uasset
+[2015.11.21-16.13.49:198][ 23]LogSavePackage: Save=2.013140ms
+[2015.11.21-16.13.49:198][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_01_Atlas_Billboards_Normal_TexEEF6424143958B04E1267BA2984C5791.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Normal_Tex.uasset'
+[2015.11.21-16.13.49:201][ 23]LogSavePackage: Total save time: 10.417964ms
+[2015.11.21-16.13.49:201][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Normal_Tex.uasset
+[2015.11.21-16.13.49:301][ 23]LogSavePackage: Save=67.478325ms
+[2015.11.21-16.13.49:301][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_01_Atlas_Billboards_Tex8707B30A4AEF218E6FAAAB88B863B395.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Tex.uasset'
+[2015.11.21-16.13.49:303][ 23]LogSavePackage: Total save time: 69.775552ms
+[2015.11.21-16.13.49:303][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Tex.uasset
+[2015.11.21-16.13.49:740][ 23]LogSavePackage: Save=1.590498ms
+[2015.11.21-16.13.49:740][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_01_Atlas_Billboards_Tex4EBB328342549679BD94FBB0090C9DD6.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Tex.uasset'
+[2015.11.21-16.13.49:743][ 23]LogSavePackage: Total save time: 60.732547ms
+[2015.11.21-16.13.49:743][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Tex.uasset
+[2015.11.21-16.13.49:784][ 23]LogSavePackage: Save=16.188698ms
+[2015.11.21-16.13.49:784][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_01_Billboard_Mat576CAAA849255E1BEB045E9D25EDDB68.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat.uasset'
+[2015.11.21-16.13.49:786][ 23]LogSavePackage: Total save time: 18.495087ms
+[2015.11.21-16.13.49:786][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat.uasset
+[2015.11.21-16.13.50:046][ 23]LogSavePackage: Save=22.435225ms
+[2015.11.21-16.13.50:046][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_025FBB989C4C25E832C1A1DD8830E410F3.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_02.uasset'
+[2015.11.21-16.13.50:048][ 23]LogSavePackage: Total save time: 24.801731ms
+[2015.11.21-16.13.50:048][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_02.uasset
+[2015.11.21-16.13.50:925][ 23]LogSavePackage: Save=1.540280ms
+[2015.11.21-16.13.50:925][ 23]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/HillTree_Tall_02B424475F40D54BAE7D595582F7CB0B88.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_02.uasset'
+[2015.11.21-16.13.50:930][ 23]LogSavePackage: Total save time: 24.723284ms
+[2015.11.21-16.13.50:931][ 23]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_02.uasset
+[2015.11.21-16.13.51:583][ 23]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat'
+[2015.11.21-16.13.51:583][ 23]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat'
+[2015.11.21-16.13.51:583][ 23]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat.HillTree_Tall_01_Billboard_Mat'
+[2015.11.21-16.13.51:584][ 23]LogLinker:Warning: Can't find file '/Game/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat'
+[2015.11.21-16.13.51:584][ 23]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/KiteDemo/Environments/Trees/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat.HillTree_Tall_01_Billboard_Mat'
+[2015.11.21-16.13.57:669][268]SourceControl: Info On branch master
+[2015.11.21-16.13.57:669][268]SourceControl: Info Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+[2015.11.21-16.13.57:669][268]SourceControl: Info   (use "git pull" to update your local branch)
+[2015.11.21-16.13.57:669][268]SourceControl: Info Changes to be committed:
+[2015.11.21-16.13.57:669][268]SourceControl: Info   (use "git reset HEAD <file>..." to unstage)
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Normal_Tex.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Atlas_Billboards_Tex.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_01_Billboard_Mat.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdv/HillTree_Tall_02/HillTree_Tall_02.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_MacroVariation.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	new file:   Content/VehicleAdvBP/Grass/T_ground_Moss_D.uasset
+[2015.11.21-16.13.57:669][268]SourceControl: Info Changes not staged for commit:
+[2015.11.21-16.13.57:669][268]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2015.11.21-16.13.57:669][268]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Content/VehicleAdvBP/Maps/VehicleAdvExampleMap.umap
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Engine.ini
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Intermediate/Config/CoalescedSourceConfigs/Game.ini
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2015.11.21-16.13.57:669][268]SourceControl: Info 	modified:   Saved/Logs/AutumnJam2015.log
+[2015.11.21-16.13.58:728][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleAdv/Grass/T_Ground_Grass_N" FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Ground_Grass_N.uasset" SILENT=true
+[2015.11.21-16.13.59:873][268]LogSavePackage: Save=1093.914185ms
+[2015.11.21-16.13.59:873][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Ground_Grass_N25026A8D4F40953A3E93769E78AD3B9A.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Ground_Grass_N.uasset'
+[2015.11.21-16.13.59:874][268]LogSavePackage: Total save time: 1095.928047ms
+[2015.11.21-16.13.59:874][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.14.00:856][268]LogSavePackage: Save=174.148010ms
+[2015.11.21-16.14.00:856][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_GDC_Grass01_D_NoisyAlpha565B56A84D6B249C7F9D9A98D32617D7.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset'
+[2015.11.21-16.14.00:858][268]LogSavePackage: Total save time: 176.287241ms
+[2015.11.21-16.14.00:858][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.14.01:608][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleAdv/Grass/T_MacroVariation" FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_MacroVariation.uasset" SILENT=true
+[2015.11.21-16.14.01:942][268]LogSavePackage: Save=181.854904ms
+[2015.11.21-16.14.01:942][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_MacroVariationCFB8B5304A83C63241F31C88484886E0.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_MacroVariation.uasset'
+[2015.11.21-16.14.01:944][268]LogSavePackage: Total save time: 184.185483ms
+[2015.11.21-16.14.01:944][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_MacroVariation.uasset
+[2015.11.21-16.14.02:664][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleAdv/Grass/T_Perlin_Noise_M" FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Perlin_Noise_M.uasset" SILENT=true
+[2015.11.21-16.14.02:792][268]LogSavePackage: Save=126.658859ms
+[2015.11.21-16.14.02:792][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Perlin_Noise_MD3178C064501027CF00DCABCAFFA7110.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Perlin_Noise_M.uasset'
+[2015.11.21-16.14.02:794][268]LogSavePackage: Total save time: 129.039291ms
+[2015.11.21-16.14.02:794][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.14.03:361][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleAdv/Grass/M_Ground_Grass2" FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/M_Ground_Grass2.uasset" SILENT=true
+[2015.11.21-16.14.03:389][268]LogSavePackage: Save=26.123539ms
+[2015.11.21-16.14.03:389][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_Ground_Grass229008BD44B07A6E0F9A18C9ACFF0A432.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/M_Ground_Grass2.uasset'
+[2015.11.21-16.14.03:391][268]LogSavePackage: Total save time: 28.430291ms
+[2015.11.21-16.14.03:391][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.14.03:571][268]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/VehicleAdv/Grass/T_ground_Moss_D" FILE="../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_ground_Moss_D.uasset" SILENT=true
+[2015.11.21-16.14.03:799][268]LogSavePackage: Save=226.483063ms
+[2015.11.21-16.14.03:799][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_ground_Moss_D4147DBBF4A745B4708B3A8BBDF6A81F3.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_ground_Moss_D.uasset'
+[2015.11.21-16.14.03:801][268]LogSavePackage: Total save time: 228.766356ms
+[2015.11.21-16.14.03:801][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/T_ground_Moss_D.uasset
+[2015.11.21-16.14.04:647][268]LogSavePackage: Save=33.576778ms
+[2015.11.21-16.14.04:647][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_AssetPlatform_GrassE786474C4E649AE92C2B47BCA52290F1.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/M_AssetPlatform_Grass.uasset'
+[2015.11.21-16.14.04:649][268]LogSavePackage: Total save time: 36.031622ms
+[2015.11.21-16.14.04:649][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdv/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.14.06:940][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_AssetPlatform_Grass.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.07:147][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_ground_Moss_D.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.07:346][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/M_Ground_Grass2.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.07:546][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Perlin_Noise_M.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.07:836][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_MacroVariation.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.08:049][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.08:257][268]SourceControl:Error: Error error: pathspec 'C:/Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/VehicleAdvBP/Grass/T_Ground_Grass_N.uasset' did not match any file(s) known to git.
+[2015.11.21-16.14.08:358][268]LogSavePackage: Save=1.486762ms
+[2015.11.21-16.14.08:359][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Ground_Grass_N404C98D14012F62138CFBDAD04EE2D4A.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Ground_Grass_N.uasset'
+[2015.11.21-16.14.08:360][268]LogSavePackage: Total save time: 4.447088ms
+[2015.11.21-16.14.08:360][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Ground_Grass_N.uasset
+[2015.11.21-16.14.08:368][268]LogSavePackage: Save=1.552010ms
+[2015.11.21-16.14.08:368][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_GDC_Grass01_D_NoisyAlpha88942ECF443C1FCE0DE635A6B43534A9.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset'
+[2015.11.21-16.14.08:370][268]LogSavePackage: Total save time: 4.511971ms
+[2015.11.21-16.14.08:370][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_GDC_Grass01_D_NoisyAlpha.uasset
+[2015.11.21-16.14.08:378][268]LogSavePackage: Save=1.552010ms
+[2015.11.21-16.14.08:378][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_MacroVariationC840A1164D3068E35909ADA4C1A5CBBA.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_MacroVariation.uasset'
+[2015.11.21-16.14.08:380][268]LogSavePackage: Total save time: 4.748769ms
+[2015.11.21-16.14.08:380][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_MacroVariation.uasset
+[2015.11.21-16.14.08:390][268]LogSavePackage: Save=1.582801ms
+[2015.11.21-16.14.08:390][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/T_Perlin_Noise_M4E4A1DF0460F48C25ED492826CDFF87F.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Perlin_Noise_M.uasset'
+[2015.11.21-16.14.08:391][268]LogSavePackage: Total save time: 4.868634ms
+[2015.11.21-16.14.08:391][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/T_Perlin_Noise_M.uasset
+[2015.11.21-16.14.08:401][268]LogSavePackage: Save=1.932864ms
+[2015.11.21-16.14.08:401][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_Ground_Grass234897280476FDCF8CE788C8F29D9F4B5.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_Ground_Grass2.uasset'
+[2015.11.21-16.14.08:402][268]LogSavePackage: Total save time: 5.646836ms
+[2015.11.21-16.14.08:402][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_Ground_Grass2.uasset
+[2015.11.21-16.14.08:411][268]LogSavePackage: Save=1.592698ms
+[2015.11.21-16.14.08:411][268]LogSavePackage: Moving '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Saved/M_AssetPlatform_Grass2B2593644A884EE9E9A5CBB6260055EA.tmp' to '../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_AssetPlatform_Grass.uasset'
+[2015.11.21-16.14.08:412][268]LogSavePackage: Total save time: 4.573919ms
+[2015.11.21-16.14.08:412][268]LogSavePackage:Warning: Finished SavePackage ../../../../../../Users/JaniVat/UnrealProjects/AutumnGameJam-2015/Content/KiteDemo/Environments/GroundTiles/Grass/M_AssetPlatform_Grass.uasset
+[2015.11.21-16.14.08:447][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_AssetPlatform_Grass'
+[2015.11.21-16.14.08:447][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_AssetPlatform_Grass'
+[2015.11.21-16.14.08:447][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/M_AssetPlatform_Grass.M_AssetPlatform_Grass'
+[2015.11.21-16.14.08:448][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_AssetPlatform_Grass'
+[2015.11.21-16.14.08:448][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/M_AssetPlatform_Grass.M_AssetPlatform_Grass'
+[2015.11.21-16.14.08:448][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/T_ground_Moss_D'
+[2015.11.21-16.14.08:448][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/T_ground_Moss_D'
+[2015.11.21-16.14.08:449][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/T_ground_Moss_D.T_ground_Moss_D'
+[2015.11.21-16.14.08:449][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/T_ground_Moss_D'
+[2015.11.21-16.14.08:449][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/T_ground_Moss_D.T_ground_Moss_D'
+[2015.11.21-16.14.08:449][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_Ground_Grass2'
+[2015.11.21-16.14.08:449][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_Ground_Grass2'
+[2015.11.21-16.14.08:450][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/M_Ground_Grass2.M_Ground_Grass2'
+[2015.11.21-16.14.08:450][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/M_Ground_Grass2'
+[2015.11.21-16.14.08:450][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/M_Ground_Grass2.M_Ground_Grass2'
+[2015.11.21-16.14.08:450][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/T_Perlin_Noise_M'
+[2015.11.21-16.14.08:450][268]LogLinker:Warning: Can't find file '/Game/VehicleAdvBP/Grass/T_Perlin_Noise_M'
+[2015.11.21-16.14.08:450][268]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/VehicleAdvBP/Grass/T_Perlin_Noise_M.T_Perlin_Noise_M'
+[2015.11.21-16.14.08:451][268]LogLinker:Warning: Can't find file '/Game/Veh
